@@ -57,3 +57,4 @@ desktop.ini
 *.bak
 *.swp
 hs_err_pid*
+.idea

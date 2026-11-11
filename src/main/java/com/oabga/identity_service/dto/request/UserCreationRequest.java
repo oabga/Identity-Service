@@ -1,14 +1,15 @@
 package com.oabga.identity_service.dto.request;
 
+import com.oabga.identity_service.exception.ErrorCode;
 import jakarta.validation.constraints.Size;
 
 import java.time.LocalDate;
 
 public class UserCreationRequest {
-    @Size(min = 3, message = "User name at least 3 charater")
+    @Size(min = 3, message = "USERNAME_INVALID")
     private String username;
 
-    @Size(min = 8, message = "password must be at least 8 character")
+    @Size(min = 8, message = "PASSWORD_INVALID")
     private String password;
     private String firstName;
     private String lastName;
